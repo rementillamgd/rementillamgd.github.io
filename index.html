@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSkill Portfolio</title>
+    <meta name="description" content="Atlas personal portfolio website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+</head>
+<body>
+    <div class="main-container">
+        <aside class="aside" aria-label="Sidebar navigation">
+            <div class="logo">
+                <a href="#home"><span>UP</span>Skill</a>
+            </div>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fa fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa fa-user"></i> <span>About</span></a></li>
+                    <li><a href="#services" class="nav-link"><i class="fa fa-list"></i> <span>Services</span></a></li>
+                    <li><a href="#portfolio" class="nav-link"><i class="fa fa-briefcase"></i> <span>Portfolio</span></a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa fa-comments"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <button class="mobile-menu-toggle" aria-label="Open navigation menu">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="settings" aria-label="Settings controls">
+            <div class="utility-clocks" aria-label="Time clocks">
+                <div class="clock-row">
+                    <span class="clock-label">Philippine Time:</span>
+                    <span class="clock-value" id="philippineClock">--</span>
+                </div>
+                <div class="clock-row">
+                    <span class="clock-label">Local Time:</span>
+                    <span class="clock-value" id="localClock">--</span>
+                </div>
+            </div>
+
+            <div class="utility-controls">
+                <button class="theme-btn" type="button" aria-label="Choose theme color">
+                    <i class="fa fa-cog"></i>
+                </button>
+                <button class="color-mode-btn" type="button" aria-label="Toggle dark or light mode">
+                    <i class="fa fa-moon-o"></i>
+                </button>
+            </div>
+
+            <div class="theme-panel" id="themePanel" aria-label="Theme colors panel">
+                <h4>Theme Colors</h4>
+                <div class="color-swatches" role="list" aria-label="Theme color options">
+                    <button class="color-btn active" type="button" data-color="#ec1839" style="--swatch:#ec1839" aria-label="Red theme"></button>
+                    <button class="color-btn" type="button" data-color="#fa5b0f" style="--swatch:#fa5b0f" aria-label="Orange theme"></button>
+                    <button class="color-btn" type="button" data-color="#37b182" style="--swatch:#37b182" aria-label="Green theme"></button>
+                    <button class="color-btn" type="button" data-color="#1854b4" style="--swatch:#1854b4" aria-label="Blue theme"></button>
+                    <button class="color-btn" type="button" data-color="#f021b2" style="--swatch:#f021b2" aria-label="Pink theme"></button>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <section id="home" class="section home">
+                <div class="container home-container">
+                    <div class="home-info">
+                        <h3>Hello, my name is <span class="name">Manuel Gabriel Rementilla</span></h3>
+                        <h3 class="typing-line">I' m a <span class="typing" data-words="Web Designer,Web Developer,Freelancer"></span><span class="cursor">|</span></h3>
+                        <p>
+                            I am a student-developer focused on crafting digital experiences by blending creativity, clean code, and my people skills to build interfaces that are both effective and tailored to user needs.
+                        </p>
+                        <a href="#about" class="btn">More About Me</a>
+                    </div>
+
+                    <div class="home-image-wrapper">
+                        <div class="img-box">
+                            <span class="corner corner-1"></span>
+                            <span class="corner corner-2"></span>
+                            <span class="corner corner-3"></span>
+                            <span class="corner corner-4"></span>
+                            <img src="assets/RementillaMGD_1x1.jpg" alt="Portrait of Manuel Gabriel Rementilla" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>I'm <span class="name">Manuel Gabriel Rementilla</span> and I'm a <span class="accent">Freelancer</span></h3>
+                            <p>
+                                I am a web designer and developer with a passion for creating modern, responsive, and user-focused experiences. My work blends visual design, interaction design, and clean front-end development to produce websites that are both functional and aesthetically pleasing.
+                            </p>
+
+                            <div class="info-grid">
+                                <div class="info-item"><p><span>Birthday</span> : 8 March 2007</p></div>
+                                <div class="info-item"><p><span>Age</span> : 19</p></div>
+                                <div class="info-item"><p><span>Website</span> : www.rementillamgd.com</p></div>
+                                <div class="info-item"><p><span>Email</span> : rementillamgd@gmail.com</p></div>
+                                <div class="info-item"><p><span>Degree</span> : BSIT (2nd Year)</p></div>
+                                <div class="info-item"><p><span>Phone</span> : +63 927 951 1078</p></div>
+                                <div class="info-item"><p><span>City</span> : Olongapo, Zambales</p></div>
+                                <div class="info-item"><p><span>Freelance</span> : Available</p></div>
+                            </div>
+
+                            <div class="btn-group">
+                                <a href="https://www.linkedin.com/in/manuel-gabriel-rementilla-73539640a/" class="btn" target="_blank" rel="noopener noreferrer">My LinkedIn</a>
+                                <a href="assets/Rementilla_Manuel_Gabriel_D_TechResume.pdf" class="btn" download="Manuel_Gabriel_Rementilla_CV.pdf">Download CV</a>
+                                <a href="#contact" class="btn">Hire Me</a>
+                            </div>
+                        </div>
+
+                        <div class="skills">
+                            <div class="skill-item">
+                                <div class="skill-header"><span>Web Design</span><span>60%</span></div>
+                                <div class="progress"><span data-progress="60%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span>Web Development</span><span>80%</span></div>
+                                <div class="progress"><span data-progress="80%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span>Graphic Design</span><span>50%</span></div>
+                                <div class="progress"><span data-progress="50%"></span></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span>Branding</span><span>30%</span></div>
+                                <div class="progress"><span data-progress="30%"></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-grid">
+                        <div class="timeline-column">
+                            <h3 class="timeline-heading"><i class="fa fa-graduation-cap"></i> Education</h3>
+                            <div class="timeline-box">
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2030</div>
+                                    <h4>Bachelor of Science in Information Technology</h4>
+                                    <p>
+                                       I am a Bachelor of Science in Information Technology student at Gordon College, a government-funded local college.
+                                    </p>
+                                 </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2025</div>
+                                    <h4>Science, Technology, Engineering, and Mathematics</h4>
+                                    <p>
+                                       A distinguished Magsaysay Scholar, I am a graduate of the Lyceum of Subic Bay's Senior High School Department and was awarded a four-year college scholarship by the institution for my academic achievements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-column">
+                            <h3 class="timeline-heading"><i class="fa fa-briefcase"></i> Experience</h3>
+                            <div class="timeline-box">
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-date"><i class="fa fa-calendar"></i> 2025 - 2026</div>
+                                    <h4>Customer Service Representative</h4>
+                                    <p>
+                                          I provided exceptional customer service by addressing inquiries, resolving issues, and ensuring a positive experience for clients. I utilized effective communication skills to understand customer needs, offered appropriate solutions, and maintained accurate records of interactions. Additionally, I collaborated with team members to improve processes and enhance overall customer satisfaction.
+                                    </p>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-dot"></span>
+                                    <div class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</div>
+                                    <h4>Campus-Journalist Technical Crew</h4>
+                                    <p>
+                                       I conducted structured research and verified sources to ensure the accuracy and integrity of published and broadcast content while maintaining organized editorial documentation. In addition, I supported live broadcast operations by preparing scripts, coordinating production, managing digital assets, and editing media using CapCut, which enabled timely content delivery under strict deadlines. I also collaborated with cross-functional production teams to coordinate workflows, adapt to changing priorities, and maintain clear communication throughout fast-paced media operations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section services">
+                <div class="container">
+                    <h2 class="section-title">Services</h2>
+
+                    <div class="service-grid">
+                        <article class="service-item">
+                            <i class="fa fa-mobile"></i>
+                            <h3>Web Design</h3>
+                            <p>Designing intuitive, engaging, and highly usable interfaces that elevate the user journey.</p>
+                        </article>
+                        <article class="service-item">
+                            <i class="fa fa-laptop"></i>
+                            <h3>Web Development</h3>
+                            <p>Building responsive and scalable websites using semantic HTML, CSS, and modern JavaScript.</p>
+                        </article>
+                        <article class="service-item">
+                            <i class="fa fa-paint-brush"></i>
+                            <h3>Graphic Design</h3>
+                            <p>Crafting visual assets, branding pieces, and creative concepts that leave a lasting impression.</p>
+                        </article>
+                        <article class="service-item">
+                            <i class="fa fa-code"></i>
+                            <h3>Front-End Code</h3>
+                            <p>Turning design concepts into clean, efficient front-end code with smooth interactions.</p>
+                        </article>
+                        <article class="service-item">
+                            <i class="fa fa-search"></i>
+                            <h3>SEO Optimization</h3>
+                            <p>Improving search visibility, performance, and structure to help content rank and convert.</p>
+                        </article>
+                        <article class="service-item">
+                            <i class="fa fa-bullhorn"></i>
+                            <h3>Marketing</h3>
+                            <p>Creating strategic digital experiences that support outreach, engagement, and brand growth.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section portfolio">
+                <div class="container">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="portfolio-subtitle">My Last Projects :</p>
+
+                    <div class="portfolio-grid">
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="PSD website template mockup" />
+                            <div class="portfolio-overlay">
+                                <h4>PSD Website Template</h4>
+                                <span>Web Design</span>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="WordPress development mockup" />
+                            <div class="portfolio-overlay">
+                                <h4>WordPress Development</h4>
+                                <span>Web Development</span>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Branding design mockup" />
+                            <div class="portfolio-overlay">
+                                <h4>Brand Identity</h4>
+                                <span>Branding</span>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80" alt="Food website design" />
+                            <div class="portfolio-overlay">
+                                <h4>Food Website</h4>
+                                <span>UI Design</span>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Media streaming interface" />
+                            <div class="portfolio-overlay">
+                                <h4>Media Interface</h4>
+                                <span>Streaming</span>
+                            </div>
+                        </article>
+                        <article class="portfolio-item">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Business website development project" />
+                            <div class="portfolio-overlay">
+                                <h4>Business Website</h4>
+                                <span>Development</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <div class="contact-header">
+                        <h2 class="section-title">Do You Have Any Questions ?</h2>
+                        <p>I'M AT YOUR SERVICE</p>
+                    </div>
+
+                  <div class="contact-info-grid">
+
+                     <article class="contact-card">
+                        <i class="fa fa-phone"></i>
+                        <h3>Call Me On</h3>
+                        <p>+63 927 951 1078</p>
+                     </article>
+
+                     <a href="https://github.com/cybrisecurity?tab=overview&from=2026-08-01&to=2026-08-16"
+                        class="contact-card"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>MGD.Rem</p>
+                     </a>
+
+                     <a href="mailto: rementillamgd@gmail.com"
+                        class="contact-card">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p class="contact-email"
+                           data-email="114,101,109,101,110,116,105,108,108,97,109,103,100,64,103,109,97,105,108,46,99,111,109">
+                        </p>
+                     </a>
+
+                     <a href="https://rementillamgd.com"
+                        class="contact-card">
+                        <i class="fa fa-globe"></i>
+                        <h3>Website</h3>
+                        <p>rementillamgd.com</p>
+                     </a>
+
+                  </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
