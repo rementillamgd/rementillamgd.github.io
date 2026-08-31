@@ -358,7 +358,7 @@ ul {
 
 .about-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
     gap: 48px;
     align-items: start;
 }
@@ -464,6 +464,7 @@ ul {
     margin: 60px 0 0;
     justify-content: stretch;
     align-items: start;
+    grid-column: 1 / -1;
 }
 
 .timeline-column {
@@ -890,7 +891,6 @@ ul {
     }
 
     .home-container,
-    .about-content,
     .service-grid,
     .portfolio-grid,
     .contact-info-grid {
